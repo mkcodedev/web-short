@@ -1,0 +1,316 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* Navigation */
+#navbar {
+    display: flex;
+    width: 100%;
+    position: fixed;
+}
+
+/* Navigation logo */
+
+h1 {
+    margin: 12px 10px;
+    font-size: 2.55rem;
+    color: white;
+}
+
+/* Navigation list  */
+
+#navbar ul {
+    display: flex;
+    padding: 2px 2px;
+}
+
+#navbar ul li {
+    list-style: none;
+    padding: 14px 28px;
+    margin: 4px 10px 2px 2px;
+    font-size: 1.4rem;
+}
+
+#navbar ul li a {
+    padding: 2px 2px;
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#navbar ul li a span:hover {
+    color: yellow;
+    border-bottom: 2px solid yellow;
+    transition: all 0.1s 0s;
+}
+
+
+/* Home */
+#home {
+    height: 566px;
+}
+
+#home img {
+    position: absolute;
+    right: 60px;
+    top: 60px;
+    height: 600px;
+    width: auto;
+    background: transparent;
+}
+#home img:hover{
+    height: 660px;
+    width: auto;
+    transition: 1s all ease-out;
+    top: 20px;
+    right: 70px;
+
+}
+
+#home .hello {
+    background: transparent;
+    /* position: relative; */
+    color: yellow;
+    top: 165px;
+    left: 70px;
+    font-size: 1.5rem;
+}
+
+#home h2 {
+    position: relative;
+    top: 155px;
+    right: 355px;
+    font-size: 4rem;
+}
+
+#home p {
+    position: relative;
+    top: 163px;
+    left: 125px;
+    font-size: 3.2rem;
+    background-color: transparent;
+}
+
+#home span {
+    color: yellow;
+    background: transparent;
+}
+
+/* buton section */
+.btn {
+    position: relative;
+    margin: 30px;
+    padding: 6px;
+    top: 165px;
+    left: 116px;
+    border: 2px solid grey;
+    font-size: 1.4rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    color: black;
+    background: yellow;
+    transition: 0.8s;
+} 
+.btn a{
+    text-decoration: none;
+    background-color: transparent;
+}
+.btn a:hover{
+    color: black;
+}
+
+.h-primary {
+    color: rgb(135, 221, 255);
+    display: flex;
+    background-color: transparent;
+    justify-content: center;
+    font-size: 2.9rem;
+}
+
+/* About me */
+#About-container {
+    height: 444px;
+    width: 98%;
+    margin: 10px;
+}
+
+#About-container img {
+    height: 444px;
+    display: block;
+    position: absolute;
+    top: 641px;
+    left: 192px;
+    background: transparent;
+}
+#About-container img:hover {
+height: 544px;
+top: 550px;
+left: 100px;
+transition: 1s all ease-in-out;
+}
+
+#About-container ul {
+    width: 400px;
+    display: block;
+    position: absolute;
+    right: 250px;
+    top: 717px;
+    list-style: none;
+    background: transparent;
+}
+
+#About-container ul li {
+    font-size: 1.7rem;
+    background: transparent;
+    padding: 10px;
+}
+
+/* Our Services */
+#services {
+    width: 100%;
+    height: 300px;
+    margin-bottom: 10px;
+}
+
+#servicesbox img {
+    display: block;
+    position: absolute;
+    right: 205px;
+    top: 1046px;
+    background: transparent;
+    height: 435px;
+}
+#servicesbox img:hover {
+    right: 220px;
+    height: 500px;
+    top: 1030px;
+    transition: 1s;
+}
+
+#servicesbox h3 {
+    display: block;
+    color: yellow;
+    position: absolute;
+    font-size: 2.8rem;
+    top: 1210px;
+    left: 53px;
+}
+
+#servicesbox ol {
+    display: block;
+    position: absolute;
+    left: 100px;
+    top: 1277px;
+    font-size: 1.9rem;
+}
+
+/* Skills */
+
+#skill-container {
+    position: relative;
+    height: 260px;
+    margin-bottom: 30px;
+
+}
+
+#skills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skill-box {
+    padding: 30px;
+    height: 137px;
+    margin: 10px;
+    width: 155px;
+    background-color: #e1dfdf;
+    border-radius: 40px 0px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.skill-box h2 {
+    background-color: transparent;
+    text-align: center;
+    color: blueviolet;
+}
+
+#skill-container .skill-box img {
+    height: 140px;
+    background-color: transparent;
+}
+#skill-container .skill-box img:hover{
+    height: 250px;
+    width: 250px;
+    transition: 1s;
+}
+
+/* contact us */
+#contact {
+    width: 90%;
+    margin: 70px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    height: 250px;
+}
+
+#contact-box {
+    padding: 15px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    width: 40%;
+    height: fit-content;
+    background-color: #a19c9c;
+    border-radius: 15px 0px;
+    padding: 5px 5px;
+}
+
+.form-group {
+    height: 50px;
+    padding: 5px;
+    background-color: #a19c9c;
+    display: block;
+}
+
+.form-group label {
+    font-size: 1.3rem;
+    color: yellow;
+    border-radius: 15px 0px;
+    padding: 5px 5px;
+    font-weight: bold;
+}
+.form-group input {
+    font-size: 1.3rem;
+    border-radius: 15px 0px;
+    padding: 5px 5px;
+
+}
+
+/* footer */
+footer{
+    width: 100%;
+    background-color: #e7e2e2b0;
+    color: black;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+/* Utility classes */

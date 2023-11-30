@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mks fitness</title>
+    <link rel="stylesheet" href="gym/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <style>
+        body {
+            font-family: 'Caveat', cursive;
+            color: white;
+            margin: 0px;
+            padding: 0px;
+            background: url('gym.png');
+            /* height: 850px; */
+        }
+
+        .left {
+            /* border: 2px solid blue; */
+            display: inline-block;
+            position: absolute;
+            left: 60px;
+            top: 20px;
+        }
+
+        .left img {
+            width: 38px;
+            filter: invert(100%);
+            padding-left: 16px;
+        }
+
+        .left div {
+            text-align: center;
+            line-height: 0px;
+            font-size: 22px;
+        }
+
+        .mid {
+            display: block;
+            width: 44%;
+            margin: 20px auto;
+            /* border: 2px solid rgb(144, 223, 18); */
+
+        }
+
+        .right {
+            position: absolute;
+            right: 34px;
+            top: 30px;
+            display: inline-block;
+            /* border: 2px solid rgb(252, 248, 20); */
+        }
+
+        .navbar {
+            display: inline-block;
+
+        }
+
+        .navbar li {
+            display: inline-block;
+            font-size: 18px;
+        }
+
+        .navbar li a {
+            text-decoration: none;
+            color: rgb(247, 247, 198);
+            padding: 34px 24px;
+        }
+
+        .navbar li a:hover,
+        .navbar li a.active {
+            text-decoration: underline;
+            color: #01ffb9;
+
+        }
+
+        .btn {
+            font-family: 'Caveat', cursive;
+            margin: 0px 8px;
+            color: white;
+            background-color: black;
+            padding: 4px 12px;
+            border: 2px solid grey;
+            border-radius: 10px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: rgb(88, 86, 86);
+        }
+
+        .container {
+            border: 2px solid;
+            margin: 70px 75px;
+            padding: 74px 97px;
+            width: 35%;
+            border-radius: 30px;
+        }
+
+        .container h1 {
+            text-align: center;
+        }
+
+        .form-group input {
+            font-family: 'Caveat', cursive;
+            text-align: center;
+            margin: 11px;
+            padding: 1px;
+            display: block;
+            width: 500px;
+            border: 2px solid black;
+            border-radius: 14px;
+            font-size: 24px;
+        }
+
+        .container button {
+            display: block;
+            width: 96%;
+            margin: 14px 15px;
+        }
+    
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <!-- left for logo -->
+        <div class="left">
+            <img src="\gym\body1.png" alt="logo">
+            <div>mkgym</div>
+        </div>
+        <!-- mid for nav bar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About US</a></li>
+                <li><a href="#">Centre location</a></li>
+                <li><a href="#">Pricing</a></li>
+            </ul>
+        </div>
+        <!-- right for action button -->
+        <div class="right">
+            <button class="btn">Login</button>
+            <button class="btn">Contact Us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join the world best GYM</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your gender">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your locality">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your DOB">
+            </div>
+            <button class="btn">
+                Submit
+            </button>
+        </form>
+    </div>
+</body>
+
+</html>
